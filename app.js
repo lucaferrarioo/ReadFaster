@@ -7,7 +7,7 @@ let userSleep;
 let i = 0;
 let title;
 
-const fileInput = document.querySelector('#selectBook');
+let getFile = document.getElementById('files');
 
 file = ['ciao', 'se', 'stai', 'leggendo', 'vuol', 'dire', 'che', 'funziona', ':)'];
 
@@ -19,7 +19,5 @@ file = ['ciao', 'se', 'stai', 'leggendo', 'vuol', 'dire', 'che', 'funziona', ':)
     }
 })();
 
-function openDialog(){
-    let input = document.createElement('input');
-    input.type = 'file';
-}
+
+file = getFile.file;
