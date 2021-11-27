@@ -20,19 +20,24 @@
   <body>
     <div class="cursor"></div>
 
-    <div class="top">
-      <div class="left">
-        <img src="logo_small_icon_only.png" alt="Logo" width="100px" />
-
-        <a href="settings.html">
-          <img src="cog-solid.svg" alt="settings" width="25px" />
-        </a>
-
-        <input type="file" id="files" style="display: none;"/>
-        <img src="/book-solid.svg" width="25px" alt="" onclick="document.getElementById('files').click()">
-      </div>
-      <div class="right">
-        <div class="navtxt"></div>
+    <div class="nav">
+      <div class="top">
+        <div class="left">
+          <img src="logo_small_icon_only.png" alt="Logo" width="100px" />
+  
+        </div>
+        <div class="right">
+          <div class="circle">
+            <a href="settings.html">
+              <img src="cog-solid.svg" alt="settings" width="20px" class="navicon"/>
+            </a>
+          </div>
+  
+          <div class="circle" onclick="document.getElementById('files').click()">
+            <input type="file" id="files" style="display: none;"/>
+            <img src="book-solid.svg" width="20px" alt="" class="navicon">
+          </div>
+        </div>
       </div>
     </div>
 

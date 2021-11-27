@@ -8,8 +8,6 @@ let i = 0;
 let title;
 let book;
 
-let specs = document.querySelector('.navtxt');
-
 let getFile = document.getElementById('files');
 let start = document.querySelector('#startBtn');
 
