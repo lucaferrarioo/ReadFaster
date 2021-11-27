@@ -6,6 +6,7 @@
 * {
   font-family: NeutralFace;
   overflow: hidden;
+  cursor: none;
 }
 
 body {
@@ -13,6 +14,20 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: palevioletred;
+  z-index: 1000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .top {
@@ -37,7 +52,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 100000;
+  z-index: 10;
 }
 
 .right {
@@ -64,7 +79,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  z-index: 1000;
 }
 
 .navtxt a {
@@ -95,9 +109,16 @@ body {
 
 .word {
   font-size: 28pt;
+  text-align: center;
 }
 
 #selectBook {
   width: 25px;
+}
+
+.startBtn button {
+  background: white;
+  border: none;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

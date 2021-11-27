@@ -6,12 +6,24 @@
 *{
     font-family: NeutralFace;
     overflow: hidden;
+    cursor: none;
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.cursor{
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: palevioletred;
+    z-index: 1000;
+    user-select: none;
+    pointer-events: none;
 }
 
 .top{
@@ -28,7 +40,7 @@ body{
     width: 350px;
     justify-content: space-evenly;
     align-items: center;
-    z-index: 100000;
+    z-index: 10;
 }
 
 .right{
@@ -45,7 +57,6 @@ body{
     width: 250px;
     margin-right: 200px;
     justify-content: space-evenly;
-    z-index: 1000;
 }
 
 .navtxt a{
@@ -67,8 +78,16 @@ body{
 
 .word{
     font-size: 28pt;
+    text-align: center;
 }
 
 #selectBook{
     width: 25px;
 }
+
+.startBtn button{
+    background: white;
+    border: none;
+    margin-top: 50px;
+}
+

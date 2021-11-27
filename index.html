@@ -13,10 +13,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>Document</title>
   </head>
   <body>
+    <div class="cursor"></div>
+
     <div class="top">
       <div class="left">
         <img src="logo_small_icon_only.png" alt="Logo" width="100px" />
@@ -25,22 +28,25 @@
           <img src="cog-solid.svg" alt="settings" width="25px" />
         </a>
 
-        <input type="file" id="files" style="display: none;""/>
+        <input type="file" id="files" style="display: none;"/>
         <img src="/book-solid.svg" width="25px" alt="" onclick="document.getElementById('files').click()">
       </div>
       <div class="right">
-        <div class="navtxt">
-          <a href="index.html">Home</a>
-          <a href="account.html">Account</a>
-        </div>
+        <div class="navtxt"></div>
       </div>
     </div>
 
     <div class="mainctx">
       <div class="word"></div>
+      <div class="startBtn">
+        <button id="startBtn">
+          <img src="play-solid.svg" alt="" width="15px">
+        </button>
+      </div>
     </div>
 
     <script src="app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>
